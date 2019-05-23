@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    background-color: rgb(244, 239, 223);
+    font-family: Raleway, serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+body{
+   
+}
+
+container{
+    
+}
+
+header{
+    height:100vh;
+    background-image:url(Omnifood%20Contents/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    margin:0;
+}
+section{
+
+    
+}
