@@ -20,9 +20,6 @@ body{
     max-width: 1140px;
     margin: 0 auto;
 }
-container{
-    
-}
 
 header{
     height:100vh;
@@ -31,9 +28,17 @@ header{
     background-position: center;
 }
 h1{
-    margin:0;
+    margin:10px 0;
+    font-size: 240%;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    
+    
 }
 .hero-text-box{
+    
     position: absolute;
     width: 1140px;
     top:50%;
@@ -41,7 +46,23 @@ h1{
     transform:translate(-50%,-50%);
     
 }
-
+.btn:link, :visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border:3px solid orange;
+    color:beige;
+    
+}
+.btn-full{
+    background-color: orange;
+    border-radius: 200px;
+    
+}
+.btn-ghost{
+    border-radius: 200px;
+}
 
 
 
