@@ -16,9 +16,14 @@ html{
 body{
    
 }
+/*i guess this class is just to establish the width of the page*/
 .row{
     max-width: 1140px;
     margin: 0 auto;
+}
+img{
+    height:200px;
+    width:auto;
 }
 
 header{
@@ -37,6 +42,7 @@ h1{
     
     
 }
+/*this is the header box in the header*/
 .hero-text-box{
     
     position: absolute;
@@ -46,7 +52,8 @@ h1{
     transform:translate(-50%,-50%);
     
 }
-.btn:link, :visited{
+/*these are the buttons underneath the header*/
+.btn:link, .btn:visited{
     margin:0 15px 0 0;
     display: inline-block;
     padding: 10px 30px;
@@ -65,7 +72,7 @@ h1{
     border-radius: 200px;
     color:orange;
 }
-.btn:hover, :active{
+.btn:hover, .btn:active{
     background-color: #aa6f03;
     border:3px solid #aa6f03;
     transition: ease-in-out .17s;
