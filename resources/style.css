@@ -47,6 +47,7 @@ h1{
     
 }
 .btn:link, :visited{
+    margin:0 15px 0 0;
     display: inline-block;
     padding: 10px 30px;
     font-weight: bold;
@@ -62,6 +63,12 @@ h1{
 }
 .btn-ghost{
     border-radius: 200px;
+    color:orange;
+}
+.btn:hover, :active{
+    background-color: #aa6f03;
+    border:3px solid #aa6f03;
+    transition: ease-in-out .17s;
 }
 
 
