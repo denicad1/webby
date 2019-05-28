@@ -15,18 +15,7 @@ html{
 
 body{
    
-}
-/*i guess this class is just to establish the width of the page*/
-.row{
-    max-width: 1140px;
-    margin: 0 auto;
-}
-img{
-    height:200px;
-    width:auto;
-}
-
-header{
+}header{
     height:100vh;
     background-image:linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)),url(Omnifood%20Contents/hero.jpg);
     background-size: cover;
@@ -42,6 +31,15 @@ h1{
     
     
 }
+img{
+    height:200px;
+    width:auto;
+}
+/*i guess this class is just to establish the width of the page*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 /*this is the header box in the header*/
 .hero-text-box{
     
@@ -52,7 +50,8 @@ h1{
     transform:translate(-50%,-50%);
     
 }
-/*these are the buttons underneath the header*/
+/*=======these are the buttons========
+*/
 .btn:link, .btn:visited{
     margin:0 15px 0 0;
     display: inline-block;
