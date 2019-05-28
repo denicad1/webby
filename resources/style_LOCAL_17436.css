@@ -102,15 +102,6 @@ font-size:90%;
     margin-bottom: 10px;
     text-align: center;
 }
-img{
-    height:200px;
-    width:auto;
-}
-/*i guess this class is just to establish the width of the page*/
-.row{
-    max-width: 1140px;
-    margin: 0 auto;
-}
 /*this is the header box in the header*/
 .hero-text-box{
     
@@ -121,8 +112,7 @@ img{
     transform:translate(-50%,-50%);
     
 }
-/*=======these are the buttons========
-*/
+/*these are the buttons underneath the header*/
 .btn:link, .btn:visited{
     margin:0 15px 0 0;
     display: inline-block;

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    background-color: rgb(244, 239, 223);
+    font-family: Raleway, serif;
+    font-size: 20px;
+    font-weight: 400;
+    color:beige
+}
+
+body{
+   
+}header{
+    height:100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)),url(Omnifood%20Contents/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    margin:10px 0;
+    font-size: 240%;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    
+    
+}
+img{
+    height:200px;
+    width:auto;
+}
+/*i guess this class is just to establish the width of the page*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/*this is the header box in the header*/
+.hero-text-box{
+    
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    
+}
+/*=======these are the buttons========
+*/
+.btn:link, .btn:visited{
+    margin:0 15px 0 0;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border:3px solid orange;
+    color:beige;
+    
+}
+.btn-full{
+    background-color: orange;
+    border-radius: 200px;
+    
+}
+.btn-ghost{
+    border-radius: 200px;
+    color:orange;
+}
+.btn:hover, .btn:active{
+    background-color: #aa6f03;
+    border:3px solid #aa6f03;
+    transition: ease-in-out .17s;
+}
+
+
+

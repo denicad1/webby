@@ -13,6 +13,7 @@ html{
     color:beige
 }
 
+<<<<<<< HEAD
 
 /*i guess this class is just to establish the width of the page*/
 .row{
@@ -47,6 +48,11 @@ section{
     transition: border-bottom ease-in-out .1s;
 }
 header{
+=======
+body{
+   
+}header{
+>>>>>>> 08b923980bb254cf63cef0267f8a20c83f22a68f
     height:100vh;
     background-image:linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)),url(Omnifood%20Contents/hero.jpg);
     background-size: cover;
