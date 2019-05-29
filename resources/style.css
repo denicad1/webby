@@ -12,9 +12,27 @@ html{
     font-weight: 400;
     color:beige
 }
+/*=====reusables section======= 
+ */
+.clearfix{zoom: 1;}
+.clearfix::after{
+    content:".";
+    clear: both;
+    display:block;
+    height:0;
+    visibility: hidden;
+}
+img{
+    height:200px;
+    width:auto;
+}
+.long-copy{
+    line-height: 145%;
+    width:70%;
+    margin:0 15%;
+}
 
-
-/*i guess this class is just to establish the width of the page*/
+/*this class is just to establish the width of the page*/
 .row{
     max-width: 1140px;
     margin: 0 auto;
@@ -22,6 +40,8 @@ html{
 section{
     padding: 80px 0;
 }
+/*===== Navigation and first view ===== 
+ */
 .logo{
     height:200px;
     width:auto;
@@ -52,6 +72,17 @@ header{
     background-size: cover;
     background-position: center;
 }
+/*this is the BIG text in the header*/
+.hero-text-box{
+    
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    
+}
+/* ==== headings ======= */
 h1,h2,h3{
     font-weight: 200;
     text-transform: uppercase;
@@ -83,18 +114,8 @@ h3{
     font-size: 110%;
     margin-bottom: 15px;
 }
-.long-copy{
-    line-height: 145%;
-    width:70%;
-    margin:0 15%;
-}
-.box{
-    padding:1%;
-}
-.box p{
-line-height: 175%;
-font-size:90%;
-}
+
+
 .icon-big{
     font-size: 400%;
     display: block;
@@ -102,25 +123,63 @@ font-size:90%;
     margin-bottom: 10px;
     text-align: center;
 }
-img{
-    height:200px;
-    width:auto;
+/* ==== grid.css box properties ====== 
+ */
+.box{
+    padding:1%;
 }
-/*i guess this class is just to establish the width of the page*/
-.row{
-    max-width: 1140px;
-    margin: 0 auto;
+.box p{
+line-height: 175%;
+font-size:90%;
 }
-/*this is the header box in the header*/
-.hero-text-box{
-    
-    position: absolute;
-    width: 1140px;
-    top:50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-    
+
+/*======how it works section =======
+ */
+ 
+ .steps-box{
+     margin-top: 30px;
+ }
+ .steps-box:first-child{
+    text-align: right;
+    padding-right:3%;
+    margin-top: 30px;
+ }
+ .steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+ }
+ .app-screen{
+     width: 40%;
+ }
+ .works-step{
+     margin-bottom: 50px;
+     
+ }
+.works-step:last-of-type{
+    margin-bottom:80px;
 }
+
+ .works-step div{
+     color: #e67e22;
+     border: 2px solid #e67e22;
+     display: inline-block;
+     border-radius: 50%;
+     height: 54px;
+     width: 50px;
+     padding:5px;
+     float: left;
+     font-size: 150%;
+     text-align: center;
+    margin-right:35px; 
+ }
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right:10px; 
+}
+
+
 /*=======these are the buttons========
 */
 .btn:link, .btn:visited{
@@ -147,6 +206,8 @@ img{
     border:3px solid #aa6f03;
     transition: ease-in-out .17s;
 }
+/* ==== picture grid section 
+ */
 .section-meals{
     padding:0
 }
