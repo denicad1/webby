@@ -162,7 +162,6 @@ font-size:90%;
  .works-step div{
      color: #e67e22;
      border: 2px solid #e67e22;
-     display: inline-block;
      border-radius: 50%;
      height: 54px;
      width: 50px;
@@ -179,7 +178,43 @@ font-size:90%;
     margin-right:10px; 
 }
 
-
+/* ======== cities section ======= 
+ */
+.cities-box{
+    position: relative;
+    overflow: hidden;
+}
+.cities-box img{
+     width: 100%;
+     height: auto;
+     margin-bottom: 15px;
+     scale: 1;
+     opacity: .8;    
+}
+.city-feature{
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.city-feature i{
+    margin-right: 5px;
+    color: orange;
+}
+.cities-box h3{
+    text-align: center;
+}
+.cities-box h3:after{
+    display: block;
+    content: " ";
+    height:2px;
+    width:75%;
+    background-color: orange;
+    margin: 5px auto;
+}
+.cities-box img:hover{
+    transform: scale(1.15);
+    opacity: 1;
+    transition: transform 0.5s, opacity .5s;
+}
 /*=======these are the buttons========
 */
 .btn:link, .btn:visited{
