@@ -180,6 +180,9 @@ font-size:90%;
 
 /* ======== cities section ======= 
  */
+.section-cities{
+    background-color:rgb(211, 211, 211);
+}
 .cities-box{
     position: relative;
     overflow: hidden;
@@ -188,7 +191,6 @@ font-size:90%;
      width: 100%;
      height: auto;
      margin-bottom: 15px;
-     scale: 1;
      opacity: .8;    
 }
 .city-feature{
@@ -215,6 +217,7 @@ font-size:90%;
     opacity: 1;
     transition: transform 0.5s, opacity .5s;
 }
+
 /*=======these are the buttons========
 */
 .btn:link, .btn:visited{
