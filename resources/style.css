@@ -10,7 +10,7 @@ html{
     font-family: Raleway, serif;
     font-size: 20px;
     font-weight: 400;
-    color:beige
+    
 }
 /*=====reusables section======= 
  */
@@ -54,6 +54,7 @@ section{
     display: inline-block;
     margin:10px;
     border-bottom: 2px solid transparent;
+    transition: border-bottom .1s;
 }
 .main-nav li a,.main-nav li a:visited{
     text-decoration: none;
@@ -65,13 +66,14 @@ section{
 
 .main-nav li a:hover,.main-nav li a:active{
     border-bottom: 2px solid orange;
-    transition: border-bottom ease-in-out .1s;
+    
 }
 header{
     height:100vh;
     background-image:linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)),url(Omnifood%20Contents/hero.jpg);
     background-size: cover;
     background-position: center;
+    color:beige;
 }
 /*this is the BIG text in the header*/
 .hero-text-box{
@@ -196,12 +198,12 @@ font-size:90%;
      transition: transform 0.5s, opacity .5s;
 }
 .city-feature{
-    margin-bottom: 5px;
-    margin-left: 10px;
+    margin-bottom: 1%;
+    margin-left: 1%;
 }
 .city-feature i{
     position: relative;
-    margin-right: 5px;
+    margin-right: 1%;
     color: orange;
     font-size: 140%;
     line-height: 120%;
