@@ -53,6 +53,7 @@ section{
 .main-nav li{
     display: inline-block;
     margin:10px;
+    border-bottom: 2px solid transparent;
 }
 .main-nav li a,.main-nav li a:visited{
     text-decoration: none;
@@ -191,15 +192,21 @@ font-size:90%;
      width: 100%;
      height: auto;
      margin-bottom: 15px;
-     opacity: .8;    
+     opacity: .8; 
+     transition: transform 0.5s, opacity .5s;
 }
 .city-feature{
     margin-bottom: 5px;
     margin-left: 10px;
 }
 .city-feature i{
+    position: relative;
     margin-right: 5px;
     color: orange;
+    font-size: 140%;
+    line-height: 120%;
+    vertical-align: middle;
+    bottom:-2px;
 }
 .cities-box h3{
     text-align: center;
@@ -215,7 +222,19 @@ font-size:90%;
 .cities-box img:hover{
     transform: scale(1.15);
     opacity: 1;
-    transition: transform 0.5s, opacity .5s;
+   
+}
+.cities-box a:link , .cities-box a:visited {
+text-decoration: none;
+color: black;
+     padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .5s;
+    
+}
+.cities-box a:hover, .cities-box a:active{
+    border-bottom: 2px solid orange;
+   
 }
 
 /*=======these are the buttons========
