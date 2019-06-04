@@ -74,6 +74,7 @@ header{
     background-size: cover;
     background-position: center;
     color:beige;
+    background-attachment: fixed;
 }
 /*this is the BIG text in the header*/
 .hero-text-box{
@@ -304,30 +305,42 @@ color: black;
 }
 /*==== testimonials ========*/
 .section-testimonial{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Omnifood%20Contents/back-customers.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(Omnifood%20Contents/back-customers.jpg);
     background-size: cover;
-     color: beige; 
+    color: beige; 
+    background-attachment: fixed;
 }
 
 .testimonial{
-    margin: 30px 0;
-    
-}
-.testimonial img{
+    line-height: 145%;
+    padding: 2%;
     position: relative;
-    bottom: 0;
-    left: 0;
+}
+.name img{
+    border-radius: 50%;
     height:100px;
     width: auto;
-    float: left;
+    vertical-align: middle;
+    margin-right: 25px;
+    
     
 }
 .name{
-    position: relative;
-    top:20px;
-    left:10px;
+    
+    display: block;
+    margin-top: 25px;
+    font-size: 90%;
    
 }
+.testimonial:before{
+    display: block;
+    content: "\201c";
+    font-size: 400%;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
 
 
 
