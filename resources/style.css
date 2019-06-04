@@ -303,8 +303,15 @@ color: black;
     margin-bottom:80px;
 }
 /*==== testimonials ========*/
+.section-testimonial{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Omnifood%20Contents/back-customers.jpg);
+    background-size: cover;
+     color: beige; 
+}
+
 .testimonial{
     margin: 30px 0;
+    
 }
 .testimonial img{
     position: relative;
@@ -319,6 +326,7 @@ color: black;
     position: relative;
     top:20px;
     left:10px;
+   
 }
 
 
