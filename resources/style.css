@@ -315,6 +315,7 @@ color: black;
     line-height: 145%;
     padding: 2%;
     position: relative;
+    font-style: italic;
 }
 .name img{
     border-radius: 50%;
