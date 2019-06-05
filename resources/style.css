@@ -1,348 +1,389 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    background-color: rgb(244, 239, 223);
-    font-family: Raleway, serif;
-    font-size: 20px;
-    font-weight: 400;
-    
+html {
+  background-color: rgb(244, 239, 223);
+  font-family: Raleway, serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 /*=====reusables section======= 
  */
-.clearfix{zoom: 1;}
-.clearfix::after{
-    content:".";
-    clear: both;
-    display:block;
-    height:0;
-    visibility: hidden;
+.clearfix {
+  zoom: 1;
 }
-img{
-    height:200px;
-    width:auto;
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
-.long-copy{
-    line-height: 145%;
-    width:70%;
-    margin:0 15%;
+img {
+  height: 200px;
+  width: auto;
+}
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin: 0 15%;
 }
 
 /*this class is just to establish the width of the page*/
-.row{
-    max-width: 1140px;
-    margin: 0 auto;
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
 }
-section{
-    padding: 80px 0;
+section {
+  padding: 80px 0;
 }
 /*===== Navigation and first view ===== 
  */
-.logo{
-    height:200px;
-    width:auto;
-    float: left;
+.logo {
+  height: 200px;
+  width: auto;
+  float: left;
 }
-.main-nav{  
-    float: right;
+.main-nav {
+  float: right;
 }
-.main-nav li{
-    display: inline-block;
-    margin:10px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom .1s;
+.main-nav li {
+  display: inline-block;
+  margin: 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.1s;
 }
-.main-nav li a,.main-nav li a:visited{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-    color: beige;
-    padding:3px 0;
+.main-nav li a,
+.main-nav li a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  color: beige;
+  padding: 3px 0;
 }
 
-.main-nav li a:hover,.main-nav li a:active{
-    border-bottom: 2px solid orange;
-    
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid orange;
 }
-header{
-    height:100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)),url(Omnifood%20Contents/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    color:beige;
-    background-attachment: fixed;
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(Omnifood%20Contents/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  color: beige;
+  background-attachment: fixed;
 }
 /*this is the BIG text in the header*/
-.hero-text-box{
-    
-    position: absolute;
-    width: 1140px;
-    top:50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-    
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* ==== headings ======= */
-h1,h2,h3{
-    font-weight: 200;
-    text-transform: uppercase;
-    
-    
+h1,
+h2,
+h3 {
+  font-weight: 200;
+  text-transform: uppercase;
 }
-h1{
-    margin:10px 0;
-    font-size: 240%;
-    word-spacing: 2px;
-    letter-spacing: 2px;
+h1 {
+  margin: 10px 0;
+  font-size: 240%;
+  word-spacing: 2px;
+  letter-spacing: 2px;
 }
-h2{
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align:center;
-    margin-bottom: 30px;
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
 }
-h2::after{
-    display:block;
-    height:2px;
-    background-color: orange;
-    content: "";
-    width:100px;
-    margin:0 auto;
-    margin-top:30px;
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: orange;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
-h3{
-    font-size: 110%;
-    margin-bottom: 15px;
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
 }
 
-
-.icon-big{
-    font-size: 400%;
-    display: block;
-    color:orange;
-    margin-bottom: 10px;
-    text-align: center;
+.icon-big {
+  font-size: 400%;
+  display: block;
+  color: orange;
+  margin-bottom: 10px;
+  text-align: center;
 }
 /* ==== grid.css box properties ====== 
  */
-.box{
-    padding:1%;
+.box {
+  padding: 1%;
 }
-.box p{
-line-height: 175%;
-font-size:90%;
+.box p {
+  line-height: 175%;
+  font-size: 90%;
 }
 
 /*======how it works section =======
  */
- 
- .steps-box{
-     margin-top: 30px;
- }
- .steps-box:first-child{
-    text-align: right;
-    padding-right:3%;
-    margin-top: 30px;
- }
- .steps-box:last-child{
-    padding-left: 3%;
-    margin-top: 70px;
- }
- .app-screen{
-     width: 40%;
- }
- .works-step{
-     margin-bottom: 50px;
-     
- }
-.works-step:last-of-type{
-    margin-bottom:80px;
+
+.steps-box {
+  margin-top: 30px;
+}
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+.app-screen {
+  width: 40%;
+}
+.works-step {
+  margin-bottom: 50px;
+}
+.works-step:last-of-type {
+  margin-bottom: 80px;
 }
 
- .works-step div{
-     color: #e67e22;
-     border: 2px solid #e67e22;
-     border-radius: 50%;
-     height: 54px;
-     width: 50px;
-     padding:5px;
-     float: left;
-     font-size: 150%;
-     text-align: center;
-    margin-right:35px; 
- }
+.works-step div {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  height: 54px;
+  width: 50px;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  text-align: center;
+  margin-right: 35px;
+}
 
-.btn-app img{
-    height: 50px;
-    width: auto;
-    margin-right:10px; 
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
 
 /* ======== cities section ======= 
  */
-.section-cities{
-    background-color:rgb(211, 211, 211);
+.section-cities {
+  background-color: rgb(211, 211, 211);
 }
-.cities-box{
-    position: relative;
-    overflow: hidden;
+.cities-box {
+  position: relative;
+  overflow: hidden;
 }
-.cities-box img{
-     width: 100%;
-     height: auto;
-     margin-bottom: 15px;
-     opacity: .8; 
-     transition: transform 0.5s, opacity .5s;
+.cities-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  transition: transform 0.5s, opacity 0.5s;
 }
-.city-feature{
-    margin-bottom: 1%;
-    margin-left: 1%;
+.city-feature {
+  margin-bottom: 1%;
+  margin-left: 1%;
 }
-.city-feature i{
+.city-feature i {
+  position: relative;
+  margin-right: 1%;
+  color: orange;
+  font-size: 140%;
+  line-height: 120%;
+  vertical-align: middle;
+  bottom: -2px;
+}
+.cities-box h3 {
+  text-align: center;
+}
+.cities-box h3:after {
+  display: block;
+  content: " ";
+  height: 2px;
+  width: 75%;
+  background-color: orange;
+  margin: 5px auto;
+}
+.cities-box img:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
+.cities-box a:link,
+.cities-box a:visited {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.cities-box a:hover,
+.cities-box a:active {
+  border-bottom: 2px solid orange;
+}
+
+/*=======these are the buttons========
+*/
+.btn:link,
+.btn:visited {
+  margin: 0 15px 0 0;
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid orange;
+  color: beige;
+}
+.btn-full {
+  background-color: orange;
+  border-radius: 200px;
+}
+.btn-ghost {
+  border-radius: 200px;
+  color: orange;
+}
+.btn:hover,
+.btn:active {
+  background-color: #aa6f03;
+  border: 3px solid #aa6f03;
+  transition: ease-in-out 0.17s;
+}
+/* ==== picture grid section 
+ */
+.section-meals {
+  padding: 0;
+}
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+.meal-photo img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0.7;
+}
+.meal-photo img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+.section-feature .long-copy {
+  margin-bottom: 80px;
+}
+/*==== testimonials ========*/
+.section-testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(Omnifood%20Contents/back-customers.jpg);
+  background-size: cover;
+  color: beige;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.testimonial {
+  line-height: 145%;
+  padding: 2%;
+  position: relative;
+  font-style: italic;
+}
+.name img {
+  border-radius: 50%;
+  height: 100px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 25px;
+}
+.name {
+  display: block;
+  margin-top: 25px;
+  font-size: 90%;
+}
+.testimonial:before {
+  display: block;
+  content: "\201c";
+  font-size: 400%;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+/* ========= plan section ========= */
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width:90%;
+    margin-left:5%;
+    box-shadow:0 2px 2px gray;
+}
+.plan-box div{
+    padding:15px;
+    border-bottom: 1px solid #e8e8e8;
+    
+}
+.plan-box div:first-child{
+    background-color: lightgray;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+
+}
+.plan-box div:last-child {
+    text-align:center;
+    border:0;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 200;
+    color: orange;
+    
+}
+.plan-price span{
+    font-size:30%;
+    font-weight: 400;
+}
+.plan-price-meal{
+    font-size: 80%;
+
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box ul li{
+    padding:5px 0;
+}
+.icon-small{
     position: relative;
     margin-right: 1%;
     color: orange;
     font-size: 140%;
     line-height: 120%;
     vertical-align: middle;
-    bottom:-2px;
+    bottom: -2px;
 }
-.cities-box h3{
-    text-align: center;
-}
-.cities-box h3:after{
-    display: block;
-    content: " ";
-    height:2px;
-    width:75%;
-    background-color: orange;
-    margin: 5px auto;
-}
-.cities-box img:hover{
-    transform: scale(1.15);
-    opacity: 1;
-   
-}
-.cities-box a:link , .cities-box a:visited {
-text-decoration: none;
-color: black;
-     padding-bottom: 4px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom .5s;
-    
-}
-.cities-box a:hover, .cities-box a:active{
-    border-bottom: 2px solid orange;
-   
-}
-
-/*=======these are the buttons========
-*/
-.btn:link, .btn:visited{
-    margin:0 15px 0 0;
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: bold;
-    text-decoration: none;
-    border:3px solid orange;
-    color:beige;
-    
-}
-.btn-full{
-    background-color: orange;
-    border-radius: 200px;
-    
-}
-.btn-ghost{
-    border-radius: 200px;
-    color:orange;
-}
-.btn:hover,.btn:active {
-    background-color: #aa6f03;
-    border:3px solid #aa6f03;
-    transition: ease-in-out .17s;
-}
-/* ==== picture grid section 
- */
-.section-meals{
-    padding:0
-}
-.meals-showcase{
-    list-style:none;
-    width: 100%;
-}
-.meals-showcase li{
-    display: block;
-    float: left;
-    width:25%;
-
-}
-.meal-photo{
-    width:100%;
-    margin:0;
-    overflow: hidden;
-    background-color: black;
-
-}
-.meal-photo img{
-    width: 100%;
-    height:auto;
-    transform:scale(1.15);   
-    transition: transform 0.5s,opacity 0.5s;
-    opacity:0.7;
-}
-.meal-photo img:hover{
-    transform: scale(1.03);
-    opacity: 1;
-
-}
-.section-feature .long-copy{
-    margin-bottom:80px;
-}
-/*==== testimonials ========*/
-.section-testimonial{
-    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(Omnifood%20Contents/back-customers.jpg);
-    background-size: cover;
-    color: beige; 
-    background-attachment: fixed;
-}
-
-.testimonial{
-    line-height: 145%;
-    padding: 2%;
-    position: relative;
-    font-style: italic;
-}
-.name img{
-    border-radius: 50%;
-    height:100px;
-    width: auto;
-    vertical-align: middle;
-    margin-right: 25px;
-    
-    
-}
-.name{
-    
-    display: block;
-    margin-top: 25px;
-    font-size: 90%;
-   
-}
-.testimonial:before{
-    display: block;
-    content: "\201c";
-    font-size: 400%;
-    position: absolute;
-    top: 5px;
-    left: 0;
-}
-
-
-
-
-
