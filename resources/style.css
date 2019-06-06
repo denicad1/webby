@@ -420,4 +420,51 @@ label{
     vertical-align: middle;
 }
 
+/*===== footer section =======*/
+
+footer{
+   height:20vh; 
+    background-color: grey;
+}
+footer .row div ul li a{
+    border-bottom: 3px solid transparent;
+   text-decoration: none;
+    color:beige;
+    transition: color .3s, border-bottom .3s;
+}
+footer .row div ul li a:hover{
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+footer div ul li{
+    display: inline-block;
+    margin-right: 10px;
+    float: left;
+    text-decoration: none;
+    color: beige;
+    
+}
+
+
+.social-links{
+    float:right;
+    color: beige;
+    font-size: 125%;
+   
+    
+   
+}
+.social-links li{
+    margin-right: 30px;
+     
+}
+
+footer div p{
+    font-size: 120%;
+    width:100%; 
+    margin: 30px auto;
+    text-align: center;
+}
+
 
