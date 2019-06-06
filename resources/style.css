@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    outline: none;
 }
 
 html {
@@ -240,7 +241,9 @@ h3 {
 /*=======these are the buttons========
 */
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit]
+{
   margin: 0 15px 0 0;
   display: inline-block;
   padding: 10px 30px;
@@ -249,7 +252,7 @@ h3 {
   border: 3px solid orange;
   color: beige;
 }
-.btn-full {
+.btn-full{
   background-color: orange;
   border-radius: 200px;
 }
@@ -387,3 +390,38 @@ h3 {
     vertical-align: middle;
     bottom: -2px;
 }
+/*===== contact form ========*/
+.contact-form{
+    width:60%;
+    margin: 0 auto;
+    
+    
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    position: relative;
+        top:-5px;
+    width:100%;
+    padding: 7px;
+    border-radius: 3px ;
+    border:1px solid gray;
+    
+}
+textarea{
+    height:100px;
+}
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+    position: relative;
+    top:-5p
+}
+label{
+    position: relative;
+    top:5px;
+    vertical-align: middle;
+}
+
+
