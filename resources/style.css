@@ -423,16 +423,21 @@ label{
 /*===== footer section =======*/
 
 footer{
-   height:20vh; 
+font-size: 80%;
     background-color: grey;
+    
+  
 }
-footer .row div ul li a{
+.main-nav{
+    float: left;
+}
+.main-nav li a{
     border-bottom: 3px solid transparent;
    text-decoration: none;
     color:beige;
     transition: color .3s, border-bottom .3s;
 }
-footer .row div ul li a:hover{
+.main-nav li a:hover{
     color: orange;
     border-bottom: 3px solid orange;
 }
@@ -447,20 +452,27 @@ footer div ul li{
 }
 
 
-.social-links{
+.social-links {
     float:right;
-    color: beige;
-    font-size: 125%;
-   
     
-   
+  
 }
-.social-links li{
+.social-links li a{
+   
     margin-right: 30px;
-     
+    color: beige;
+    font-size: 125%;    
+}
+.social-links li a:hover{
+    transition: color .3s;
+    color: orange;
+}
+.social-links li a i{
+    font-size: 145%;
 }
 
 footer div p{
+    color:beige;
     font-size: 120%;
     width:100%; 
     margin: 30px auto;
