@@ -402,8 +402,6 @@ input[type=text],
 input[type=email],
 select,
 textarea{
-    position: relative;
-        top:-5px;
     width:100%;
     padding: 7px;
     border-radius: 3px ;
@@ -415,8 +413,6 @@ textarea{
 }
 input[type=checkbox]{
     margin: 10px 5px 10px 0;
-    position: relative;
-    top:-5p
 }
 label{
     position: relative;
