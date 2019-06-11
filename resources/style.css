@@ -50,6 +50,7 @@ section {
 }
 .main-nav {
   float: right;
+ 
 }
 .main-nav li {
   display: inline-block;
@@ -428,7 +429,7 @@ font-size: 80%;
     
   
 }
-.main-nav{
+.section-footer .main-nav{
     float: left;
 }
 .main-nav li a{
