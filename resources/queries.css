@@ -31,17 +31,25 @@
     .works-steps{
         margin-bottom: 40px;
     }
+    .works-step p{
+        width:100%;
+        font-size: 95%;
+    }
     .works-steps:last-of-type{
         margin-bottom: 60px;
+    }
+    .btn-app img{
+        display:inline;
+      ;
+        
     }
     .app-screen{
         width: 50%;
     }
-    .icon-small{
-        width:20px;
+    .city-feature i{ margin: 0;
     }
     .city-feature{
-        font-size: 90%;
+        font-size: 85%;
     }
 }
 
