@@ -12,8 +12,37 @@
 
 /* ==== ipad and tablets==== */
 @media only screen and (max-width:1023px){
-
-
+    body{
+        font-size: 18px;
+    }
+    section{
+        padding: 60px 0;
+    }
+    .long-copy{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .steps-box{
+        margin-top: 10px;
+    }
+    .steps-box:last-child{
+        margin-top: 10px;
+    }
+    .works-steps{
+        margin-bottom: 40px;
+    }
+    .works-steps:last-of-type{
+        margin-bottom: 60px;
+    }
+    .app-screen{
+        width: 50%;
+    }
+    .icon-small{
+        width:20px;
+    }
+    .city-feature{
+        font-size: 90%;
+    }
 }
 
 /* === ipad and small computers */
@@ -22,5 +51,7 @@
         width: 100%;
         padding: 0 2%;
       }
-
+    .row{ padding: 0 2%; }
+    
+    
 }
