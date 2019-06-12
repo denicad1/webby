@@ -5,11 +5,12 @@
     outline: none;
 }
 
-html {
+html,body {
   background-color: rgb(244, 239, 223);
   font-family: Raleway, serif;
   font-size: 20px;
   font-weight: 400;
+  overflow-x: hidden;
 }
 /*=====reusables section======= 
  */
@@ -44,7 +45,7 @@ section {
 /*===== Navigation and first view ===== 
  */
 .logo {
-  height: 200px;
+  height: 100px;
   width: auto;
   float: left;
 }
@@ -384,7 +385,7 @@ input[type=submit]
 }
 .icon-small{
     position: relative;
-    margin-right: 1%;
+    margin-right: 2%;
     color: orange;
     font-size: 140%;
     line-height: 120%;
