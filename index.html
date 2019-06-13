@@ -19,7 +19,7 @@
   <body>
     <div class="container">
       <header>
-        <nav class="sticky">
+        <nav>
           <div class="row">
             <img
               class="logo"
@@ -32,10 +32,10 @@
               alt="logo"
             />
             <ul class="main-nav">
-              <li><a href="">Food Delivery</a></li>
-              <li><a href="">How It Works</a></li>
-              <li><a href="">Our Citites</a></li>
-              <li><a href="">Sign Up</a></li>
+              <li><a href="#features">Food Delivery</a></li>
+              <li><a href="#works">How It Works</a></li>
+              <li><a href="#cities">Our Citites</a></li>
+              <li><a href="#plans">Sign Up</a></li>
             </ul>
           </div>
         </nav>
@@ -44,11 +44,11 @@
             Goodbye junk food.<br />
             Hello super healthy meals.
           </h1>
-          <a href="#" class="btn btn-full">I’m hungry </a>
-          <a href="#" class="btn btn-ghost">Show me more </a>
+          <a href="#" class="btn btn-full js--scroll-to-plan">I’m hungry </a>
+          <a href="#" class="btn btn-ghost js--scroll-to-start">Show me more </a>
         </div>
       </header>
-      <section class="section-feature" style="color: black">
+      <section class="section-feature js--section-features" style="color: black" id="features">
         <div class="row">
           <h2>
             Get food fast &mdash; not fast food.
@@ -178,7 +178,7 @@
           </li>
         </ul>
       </section>
-      <section class="section-steps" style="color: black;">
+      <section class="section-steps" style="color: black;" id="works">
         <div class="row">
           <h2>How it works &mdash; Simple as 1,2,3</h2>
         </div>
@@ -226,7 +226,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cities" style="color: black;">
+      <section class="section-cities" style="color: black;" id="cities">
         <div class="row">
           <h2>We're currently in these cities</h2>
         </div>
@@ -358,7 +358,7 @@
           </div>
         </div>
       </section>
-      <section class="section-sign-up">
+      <section class="section-sign-up js--section-plans" id="plans">
         <div class="row">
           <h2>Start eating healthy today</h2>
         </div>
@@ -525,6 +525,7 @@
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="resources/scripts.js"></script>
+        <script src="vendors/jquery.waypoints.min.js"></script>
+        <script src="resources/scripts.js"></script>
     </body>
       </html>
