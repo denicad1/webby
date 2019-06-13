@@ -14,7 +14,7 @@ $('.js--scroll-to-plan').click(function(){
 $('.js--scroll-to-start').click(function(){
     $('html,body').animate({scrollTop:$('.js--section-features').offset().top},1000);
 })
-//    thing
+
 
     $('a[href*="#features"]')
   // Remove links that don't actually link to anything
