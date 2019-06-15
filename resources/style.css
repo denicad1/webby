@@ -191,6 +191,12 @@ h3 {
 .app-screen {
   width: 40%;
 }
+.js-iphone{
+  opacity: 0;
+}
+.js-iphone.animated{
+  opacity: 1;
+}
 .works-step {
   margin-bottom: 50px;
 }
@@ -221,6 +227,13 @@ h3 {
  */
 .section-cities {
   background-color: rgb(211, 211, 211);
+  
+}
+.js-section-cities{
+  opacity:0;
+}
+.js-section-cities.animated{
+  opacity: 1;
 }
 .cities-box {
   position: relative;

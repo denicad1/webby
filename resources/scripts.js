@@ -56,8 +56,12 @@ $('.js--scroll-to-start').click(function(){
         $('.js-wp-1').addClass('animated fadeIn');  
     },{offset:'50%'});
     
-    
-    
+    $('.js-section-cities').waypoint(function(direction){
+        $('.js-section-cities').addClass('animated fadeIn');  
+    },{offset:'50%'});    
+    $('.js-iphone').waypoint(function(direction){
+        $('.js-iphone').addClass('animated fadeInUp')
+    },{offset:'75%'});
     
     
     
