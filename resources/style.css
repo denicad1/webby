@@ -3,10 +3,11 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-    outline: none;
+  outline: none;
 }
 
-html,body {
+html,
+body {
   background-color: rgb(244, 239, 223);
   font-family: Raleway, serif;
   font-size: 20px;
@@ -50,7 +51,7 @@ section {
   width: auto;
   float: left;
 }
-.logo-black{
+.logo-black {
   display: none;
   height: 50px;
   width: auto;
@@ -60,27 +61,29 @@ section {
 .main-nav {
   float: right;
   margin-top: 18px;
- 
 }
-.sticky{
+.sticky {
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.822);
-  box-shadow: 0 2px 2px #efefef;
-    z-index: 999;
+  -webkit-box-shadow: 0 2px 2px #efefef;
+          box-shadow: 0 2px 2px #efefef;
+  z-index: 999;
 }
-.sticky .main-nav{
-    margin-top: 10px;
+.sticky .main-nav {
+  margin-top: 10px;
 }
 .sticky .main-nav li a,
 .sticky .main-nav li a:visited {
   color: rgb(14, 14, 2);
   padding: 17px 0;
 }
-.sticky .logo{display: none;}
-.sticky .logo-black{
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
   display: block;
 }
 
@@ -106,9 +109,9 @@ section {
 header {
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
-    url(Omnifood%20Contents/hero.jpg);
+    url(Omnifood%20Contents/hero-min.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(Omnifood%20Contents/hero.jpg);
+    url(Omnifood%20Contents/hero-min.jpg);
   background-size: cover;
   background-position: center;
   color: beige;
@@ -191,10 +194,12 @@ h3 {
 .app-screen {
   width: 40%;
 }
-.js-iphone{
+.js-iphone {
   opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-.js-iphone.animated{
+.js-iphone.animated {
   opacity: 1;
 }
 .works-step {
@@ -227,12 +232,11 @@ h3 {
  */
 .section-cities {
   background-color: rgb(211, 211, 211);
-  
 }
-.js-section-cities{
-  opacity:0;
+.js-section-cities {
+  opacity: 0;
 }
-.js-section-cities.animated{
+.js-section-cities.animated {
   opacity: 1;
 }
 .cities-box {
@@ -296,8 +300,7 @@ h3 {
 */
 .btn:link,
 .btn:visited,
-input[type=submit]
-{
+input[type="submit"] {
   margin: 0 15px 0 0;
   display: inline-block;
   padding: 10px 30px;
@@ -306,7 +309,7 @@ input[type=submit]
   border: 3px solid orange;
   color: beige;
 }
-.btn-full{
+.btn-full {
   background-color: orange;
   border-radius: 200px;
 }
@@ -363,9 +366,9 @@ input[type=submit]
 /*==== testimonials ========*/
 .section-testimonial {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))),
-    url(Omnifood%20Contents/back-customers.jpg);
+    url(Omnifood%20Contents/back-customers-min.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(Omnifood%20Contents/back-customers.jpg);
+    url(Omnifood%20Contents/back-customers-min.jpg);
   background-size: cover;
   color: beige;
   background-attachment: fixed;
@@ -400,153 +403,149 @@ input[type=submit]
 }
 /* ========= plan section ========= */
 
-.plan-box{
-    background-color: #fff;
-    border-radius: 5px;
-    width:90%;
-    margin-left:5%;
-    -webkit-box-shadow:0 2px 2px gray;
-    box-shadow:0 2px 2px gray;
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  -webkit-box-shadow: 0 2px 2px gray;
+  box-shadow: 0 2px 2px gray;
 }
-.plan-box div{
-    padding:15px;
-    border-bottom: 1px solid #e8e8e8;
-    
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
 }
-.plan-box div:first-child{
-    background-color: lightgray;
-    border-top-left-radius:5px;
-    border-top-right-radius: 5px;
-
+.plan-box div:first-child {
+  background-color: lightgray;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .plan-box div:last-child {
-    text-align:center;
-    border:0;
+  text-align: center;
+  border: 0;
 }
-.plan-price{
-    font-size: 300%;
-    margin-bottom: 10px;
-    font-weight: 200;
-    color: orange;
-    
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 200;
+  color: orange;
 }
-.plan-price span{
-    font-size:30%;
-    font-weight: 400;
+.plan-price span {
+  font-size: 30%;
+  font-weight: 400;
 }
-.plan-price-meal{
-    font-size: 80%;
-
+.plan-price-meal {
+  font-size: 80%;
 }
-.plan-box ul{
-    list-style: none;
+.plan-box ul {
+  list-style: none;
 }
-.plan-box ul li{
-    padding:5px 0;
+.plan-box ul li {
+  padding: 5px 0;
 }
-.icon-small{
-    position: relative;
-    margin-right: 2%;
-    color: orange;
-    font-size: 140%;
-    line-height: 120%;
-    vertical-align: middle;
-    bottom: -2px;
+.icon-small {
+  position: relative;
+  margin-right: 2%;
+  color: orange;
+  font-size: 140%;
+  line-height: 120%;
+  vertical-align: middle;
+  bottom: -2px;
 }
 /*===== contact form ========*/
-.contact-form{
-    width:60%;
-    margin: 0 auto;
-    
-    
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 select,
-textarea{
-    width:100%;
-    padding: 7px;
-    border-radius: 3px ;
-    border:1px solid gray;
-    
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid gray;
 }
-textarea{
-    height:100px;
+textarea {
+  height: 100px;
 }
-input[type=checkbox]{
-    margin: 10px 5px 10px 0;
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
 }
-label{
-    position: relative;
-    top:5px;
-    vertical-align: middle;
+label {
+  position: relative;
+  top: 5px;
+  vertical-align: middle;
 }
 
 /*===== footer section =======*/
 
-footer{
-font-size: 80%;
-    background-color: grey;
-    
-  
+footer {
+  font-size: 80%;
+  background-color: grey;
 }
-.section-footer .main-nav{
-    float: left;
+.section-footer .main-nav {
+  float: left;
 }
-.main-nav li a{
-    border-bottom: 3px solid transparent;
-   text-decoration: none;
-    color:beige;
-    -webkit-transition: color .3s, border-bottom .3s;
-    transition: color .3s, border-bottom .3s;
+.main-nav li a {
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  color: beige;
+  -webkit-transition: color 0.3s, border-bottom 0.3s;
+  transition: color 0.3s, border-bottom 0.3s;
 }
-.main-nav li a:hover{
-    color: orange;
-    border-bottom: 3px solid orange;
+.main-nav li a:hover {
+  color: orange;
+  border-bottom: 3px solid orange;
 }
 
-footer div ul li{
-    display: inline-block;
-    margin-right: 10px;
-    float: left;
-    text-decoration: none;
-    color: beige;
-    
+footer div ul li {
+  display: inline-block;
+  margin-right: 10px;
+  float: left;
+  text-decoration: none;
+  color: beige;
 }
-
 
 .social-links {
-    float:right;
-    
-  
+  float: right;
 }
-.social-links li a{
-   
-    margin-right: 30px;
-    color: beige;
-    font-size: 125%;    
+.social-links li a {
+  margin-right: 30px;
+  color: beige;
+  font-size: 125%;
 }
-.social-links li a:hover{
-    -webkit-transition: color .3s;
-    transition: color .3s;
-    color: orange;
+.social-links li a:hover {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: orange;
 }
-.social-links li a i{
-    font-size: 145%;
+.social-links li a i {
+  font-size: 145%;
 }
 
-footer div p{
-    color:beige;
-    font-size: 120%;
-    width:100%; 
-    margin: 30px auto;
-    text-align: center;
+footer div p {
+  color: beige;
+  font-size: 120%;
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
 }
 
-.js-wp-1{
-    opacity: 0;
+.js-wp-1 {
+  opacity: 0;
 }
-.js-wp-1.animated{
-    opacity: 1;
+.js-wp-1.animated {
+  opacity: 1;
+}
+.mobile-nav-icon{
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon i{
+  font-size: 200%;
+  color:white;
 }

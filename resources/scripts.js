@@ -62,7 +62,24 @@ $('.js--scroll-to-start').click(function(){
     $('.js-iphone').waypoint(function(direction){
         $('.js-iphone').addClass('animated fadeInUp')
     },{offset:'75%'});
-    
+    $('.plan-box').waypoint(function(direction){
+        $('.js-plan-box').addClass('animated pulse');
+    },{offset:'50%'});
+    $('.js-nav-icon').click(function(){
+        let nav=$('.js-main-nav');
+
+        nav.slideToggle(200);
+        let icon=$('.js-nav-icon i');
+        
+        if(icon.hasClass('ion-md-map')){
+            icon.addClass('ion-md-close');
+            icon.removeClass('ion-md-map');
+        }else{
+            icon.addClass('ion-md-map');
+            icon.removeClass('ion-md-close');
+            
+        }
+    });
     
     
     
