@@ -7,13 +7,13 @@ $('.js--section-features').waypoint(function(direction){
                          }           
                                       }, {
   offset: '8%'
-})
+});
 $('.js--scroll-to-plan').click(function(){
     $('html,body').animate({scrollTop: $('.js--section-plans').offset().top},1000);
-})
+});
 $('.js--scroll-to-start').click(function(){
     $('html,body').animate({scrollTop:$('.js--section-features').offset().top},1000);
-})
+});
 
 
     $('a[href*="#"]')
@@ -60,16 +60,16 @@ $('.js--scroll-to-start').click(function(){
         $('.js-section-cities').addClass('animated fadeIn');  
     },{offset:'50%'});    
     $('.js-iphone').waypoint(function(direction){
-        $('.js-iphone').addClass('animated fadeInUp')
+        $('.js-iphone').addClass('animated fadeInUp');
     },{offset:'75%'});
     $('.plan-box').waypoint(function(direction){
         $('.js-plan-box').addClass('animated pulse');
     },{offset:'50%'});
     $('.js-nav-icon').click(function(){
-        let nav=$('.js-main-nav');
+        var nav=$('.js-main-nav');
 
         nav.slideToggle(200);
-        let icon=$('.js-nav-icon i');
+        var icon=$('.js-nav-icon i');
         
         if(icon.hasClass('ion-md-map')){
             icon.addClass('ion-md-close');
